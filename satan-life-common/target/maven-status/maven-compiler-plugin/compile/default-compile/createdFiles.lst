@@ -1,0 +1,10 @@
+com\satan\life\common\entity\health\HealthData.class
+com\satan\life\common\result\R.class
+com\satan\life\common\entity\health\SleepRecord.class
+com\satan\life\common\config\BaseProperties.class
+com\satan\life\common\entity\BaseEntity.class
+com\satan\life\common\entity\health\ExerciseRecord.class
+com\satan\life\common\entity\health\DietRecord.class
+com\satan\life\common\entity\health\HealthReminder.class
+com\satan\life\common\entity\health\HealthDataType.class
+com\satan\life\common\result\ResultCode.class

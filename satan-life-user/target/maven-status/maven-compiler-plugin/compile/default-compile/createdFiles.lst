@@ -1,0 +1,11 @@
+com\satan\life\user\UserApplication.class
+com\satan\life\user\entity\Device.class
+com\satan\life\user\controller\UserController.class
+com\satan\life\user\entity\User.class
+com\satan\life\user\entity\RolePermission.class
+com\satan\life\user\mapper\UserMapper.class
+com\satan\life\user\service\impl\UserServiceImpl.class
+com\satan\life\user\entity\Role.class
+com\satan\life\user\entity\Permission.class
+com\satan\life\user\service\UserService.class
+com\satan\life\user\entity\UserRole.class

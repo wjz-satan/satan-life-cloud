@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.satan.life.analytics.mapper.UserTaskAnalysisMapper">
+
+    <select id="selectByUserIdAndDateRange" resultType="com.satan.life.analytics.entity.UserTaskAnalysis">
+        SELECT
+            id,
+            user_id,
+            analysis_date,
+            total_tasks,
+            completed_tasks,
+            completion_rate,
+            avg_completion_minutes,
+            work_tasks,
+            completed_work_tasks,
+            study_tasks,
+            completed_study_tasks,
+            life_tasks,
+            completed_life_tasks,
+            task_suggestions,
+            create_time,
+            update_time,
+            deleted
+        FROM
+            user_task_analysis
+        WHERE
+            user_id = #{userId}
+            AND analysis_date BETWEEN #{startDate} AND #{endDate}
+            AND deleted = 0
+        ORDER BY
+            analysis_date DESC
+    </select>
+
+    <select id="selectLatestByUserId" resultType="com.satan.life.analytics.entity.UserTaskAnalysis">
+        SELECT
+            id,
+            user_id,
+            analysis_date,
+            total_tasks,
+            completed_tasks,
+            completion_rate,
+            avg_completion_minutes,
+            work_tasks,
+            completed_work_tasks,
+            study_tasks,
+            completed_study_tasks,
+            life_tasks,
+            completed_life_tasks,
+            task_suggestions,
+            create_time,
+            update_time,
+            deleted
+        FROM
+            user_task_analysis
+        WHERE
+            user_id = #{userId}
+            AND deleted = 0
+        ORDER BY
+            analysis_date DESC
+        LIMIT 1
+    </select>
+
+</mapper>

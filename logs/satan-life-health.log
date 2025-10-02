@@ -1,0 +1,37 @@
+2025-10-02 22:47:10.605 [main] INFO  com.satan.life.health.HealthApplication - The following 1 profile is active: "dev"
+2025-10-02 22:47:11.503 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-02 22:47:11.506 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-02 22:47:11.529 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2025-10-02 22:47:11.727 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=9d3253f1-ea2f-3861-b394-a93a3e31deba
+2025-10-02 22:47:12.202 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8005 (http)
+2025-10-02 22:47:12.203 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.23] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.38]
+2025-10-02 22:47:12.203 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.23] using APR version [1.7.0].
+2025-10-02 22:47:12.203 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [false].
+2025-10-02 22:47:12.203 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2025-10-02 22:47:12.230 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1c  28 May 2019]
+2025-10-02 22:47:12.240 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-02 22:47:12.240 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.79]
+2025-10-02 22:47:12.353 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/health] - Initializing Spring embedded WebApplicationContext
+2025-10-02 22:47:12.353 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1730 ms
+2025-10-02 22:47:14.103 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 19 endpoint(s) beneath base path '/actuator'
+2025-10-02 22:47:14.186 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8005 (http) with context path '/health'
+2025-10-02 22:47:14.207 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.impl.NacosClientAuthServiceImpl success.
+2025-10-02 22:47:14.207 [main] INFO  c.a.n.p.auth.spi.client.ClientAuthPluginManager - [ClientAuthPluginManager] Load ClientAuthService com.alibaba.nacos.client.auth.ram.RamClientAuthServiceImpl success.
+2025-10-02 22:47:14.342 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP satan-life-health 192.168.10.2:8005 register finished
+2025-10-02 22:47:14.422 [main] INFO  com.satan.life.health.HealthApplication - Started HealthApplication in 5.941 seconds (JVM running for 6.836)
+2025-10-02 22:47:14.440 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=satan-life-health-dev.yml, group=DEFAULT_GROUP
+2025-10-02 22:47:14.440 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=satan-life-health, group=DEFAULT_GROUP
+2025-10-02 22:47:14.443 [main] INFO  c.a.cloud.nacos.refresh.NacosContextRefresher - [Nacos Config] Listening config: dataId=satan-life-health.yml, group=DEFAULT_GROUP
+2025-10-02 22:47:14.892 [RMI TCP Connection(2)-192.168.0.107] INFO  o.a.c.c.C.[Tomcat].[localhost].[/health] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-02 22:47:14.892 [RMI TCP Connection(2)-192.168.0.107] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-02 22:47:14.894 [RMI TCP Connection(2)-192.168.0.107] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-10-02 22:47:14.895 [RMI TCP Connection(3)-192.168.0.107] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-02 22:47:15.128 [RMI TCP Connection(3)-192.168.0.107] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-02 22:47:17.565 [Thread-7] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+2025-10-02 22:47:17.565 [Thread-1] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+2025-10-02 22:47:17.566 [Thread-7] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+2025-10-02 22:47:17.566 [Thread-1] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+2025-10-02 22:47:17.697 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+2025-10-02 22:47:17.702 [SpringApplicationShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+2025-10-02 22:47:18.020 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-02 22:47:18.027 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

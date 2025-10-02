@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.satan.life.settings.mapper.UserSettingsMapper">
+    <resultMap id="BaseResultMap" type="com.satan.life.settings.entity.UserSettings">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="setting_key" property="settingKey"/>
+        <result column="setting_value" property="settingValue"/>
+        <result column="description" property="description"/>
+    </resultMap>
+
+    <select id="selectByUserId" resultMap="BaseResultMap">
+        SELECT
+            id,
+            user_id,
+            setting_key,
+            setting_value,
+            description
+        FROM
+            user_setting
+        WHERE
+            user_id = #{userId}
+    </select>
+
+    <select id="selectByUserIdAndKey" resultMap="BaseResultMap">
+        SELECT
+            id,
+            user_id,
+            setting_key,
+            setting_value,
+            description
+        FROM
+            user_setting
+        WHERE
+            user_id = #{userId}
+        AND
+            setting_key = #{settingKey}
+    </select>
+
+    <select id="selectBatchByUserIds" resultMap="BaseResultMap">
+        SELECT
+            id,
+            user_id,
+            setting_key,
+            setting_value,
+            description
+        FROM
+            user_setting
+        WHERE
+            user_id IN
+            <foreach item="item" index="index" collection="userIds" open="(" separator="," close=")">
+                #{item}
+            </foreach>
+    </select>
+</mapper>

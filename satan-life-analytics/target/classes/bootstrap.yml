@@ -1,0 +1,26 @@
+# 服务器配置
+server:
+  port: 8083
+  servlet:
+    context-path: /analytics
+
+# 应用基本配置
+spring:
+  application:
+    name: satan-life-analytics
+  # 环境配置切换
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: 6c828707-8362-4292-a1c7-7f1d85bdd997
+      config:
+        server-addr: localhost:8848
+        namespace: 6c828707-8362-4292-a1c7-7f1d85bdd997
+        file-extension: yml
+        group: DEFAULT_GROUP
+        # 共享配置
+        shared-configs:
+          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}

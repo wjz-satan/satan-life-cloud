@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="satan-life-health" />
+        <module name="satan-life-asset" />
+        <module name="satan-life-finance" />
+        <module name="satan-life-settings" />
+        <module name="satan-life-user" />
+        <module name="satan-life-analytics" />
+        <module name="satan-life-gateway" />
+        <module name="satan-life-note" />
+        <module name="satan-life-trip" />
+        <module name="satan-life-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="satan-life-assets" target="17" />
+      <module name="satan-life-auth" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

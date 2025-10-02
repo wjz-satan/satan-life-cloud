@@ -1,0 +1,11 @@
+com\satan\life\settings\mapper\UserSettingsMapper.class
+com\satan\life\settings\service\SystemSettingsService.class
+com\satan\life\settings\mapper\SystemSettingsMapper.class
+com\satan\life\settings\service\impl\SystemSettingsServiceImpl.class
+com\satan\life\settings\controller\UserSettingsController.class
+com\satan\life\settings\entity\SystemSettings.class
+com\satan\life\settings\service\impl\UserSettingsServiceImpl.class
+com\satan\life\settings\controller\SystemSettingsController.class
+com\satan\life\settings\service\UserSettingsService.class
+com\satan\life\settings\SettingsApplication.class
+com\satan\life\settings\entity\UserSettings.class

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.satan.life.settings.mapper.SystemSettingsMapper">
+    <resultMap id="BaseResultMap" type="com.satan.life.settings.entity.SystemSettings">
+        <id column="id" property="id"/>
+        <result column="setting_key" property="settingKey"/>
+        <result column="setting_value" property="settingValue"/>
+        <result column="description" property="description"/>
+        <result column="setting_type" property="settingType"/>
+        <result column="enabled" property="enabled"/>
+    </resultMap>
+
+    <select id="selectBySettingKey" resultMap="BaseResultMap">
+        SELECT
+            id,
+            setting_key,
+            setting_value,
+            description,
+            setting_type,
+            enabled
+        FROM
+            system_settings
+        WHERE
+            setting_key = #{settingKey}
+    </select>
+
+    <select id="selectBySettingType" resultMap="BaseResultMap">
+        SELECT
+            id,
+            setting_key,
+            setting_value,
+            description,
+            setting_type,
+            enabled
+        FROM
+            system_settings
+        WHERE
+            setting_type = #{settingType}
+    </select>
+
+    <select id="selectEnabledSettings" resultMap="BaseResultMap">
+        SELECT
+            id,
+            setting_key,
+            setting_value,
+            description,
+            setting_type,
+            enabled
+        FROM
+            system_settings
+        WHERE
+            enabled = true
+    </select>
+
+    <select id="selectBatchBySettingKeys" resultMap="BaseResultMap">
+        SELECT
+            id,
+            setting_key,
+            setting_value,
+            description,
+            setting_type,
+            enabled
+        FROM
+            system_settings
+        WHERE
+            setting_key IN
+            <foreach item="item" index="index" collection="settingKeys" open="(" separator="," close=")">
+                #{item}
+            </foreach>
+    </select>
+</mapper>

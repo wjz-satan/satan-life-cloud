@@ -1,0 +1,14 @@
+com\satan\life\asset\config\WebConfig.class
+com\satan\life\asset\controller\AssetCategoryController.class
+com\satan\life\asset\controller\AssetController.class
+com\satan\life\asset\service\AssetService.class
+com\satan\life\asset\exception\GlobalExceptionHandler.class
+com\satan\life\asset\service\impl\AssetServiceImpl.class
+com\satan\life\asset\AssetApplication.class
+com\satan\life\asset\service\impl\AssetCategoryServiceImpl.class
+com\satan\life\asset\mapper\AssetCategoryMapper.class
+com\satan\life\asset\service\AssetCategoryService.class
+com\satan\life\asset\constant\AssetStatusConstant.class
+com\satan\life\asset\entity\AssetCategory.class
+com\satan\life\asset\entity\Asset.class
+com\satan\life\asset\mapper\AssetMapper.class
