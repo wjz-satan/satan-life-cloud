@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18097cf5-0d2d-4064-bc23-ce11ea75d725" name="Changes" comment="" />
+    <list default="true" id="18097cf5-0d2d-4064-bc23-ce11ea75d725" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/logs/satan-life-settings.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/satan-life-settings.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,7 +197,7 @@
       <updated>1759364701085</updated>
       <workItem from="1759364713211" duration="205000" />
       <workItem from="1759364952859" duration="6168000" />
-      <workItem from="1759377381965" duration="25146000" />
+      <workItem from="1759377381965" duration="25959000" />
     </task>
     <servers />
   </component>
